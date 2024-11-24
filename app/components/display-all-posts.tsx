@@ -1,7 +1,6 @@
 "use client";
 import { PostProps } from "@/app/types";
 import { useState } from "react"
-import PostPreview from "./post-preview";
 import NewPost from "./new-post";
 import createNewPost from "@/lib/createNewPost";
 
@@ -23,10 +22,6 @@ export default function DisplayAllPosts({
   return (
     <div className="flex flex-col items-center">
       <NewPost createFunc={addNewPost} />
-      {/* {
-        posts.map((p, i) => (
-          <PostPreview key={i + p.alias} post={p} />
-        ))} */}
     </div>
   );
 }
